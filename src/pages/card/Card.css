@@ -1,0 +1,160 @@
+.card{
+    display: grid;
+    width: 100%;
+    padding-top: 100px;
+    justify-content: baseline;
+    align-items: center;
+    gap: 50px;
+}
+.producttype{
+    display: flex;
+    width: 100%;
+    gap: 10%;
+}
+.producttype h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+.producttype div{
+    display: flex;
+    gap: 100px;
+}
+.clists{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    gap: 50px;
+}
+.clist{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 22%;
+}
+.clist img{
+    width: 110px;
+    height: 80px;
+}
+.ctitle{
+    gap: 0px;
+    justify-content: center;
+    align-items: center;
+}
+.ctitle *{
+    justify-content: start;
+    align-items: center;
+}
+.ctitle h5{
+    width: 150px;
+    opacity: 0.6;
+    font-size: 15px;
+    font-weight: 500;
+}
+.cprice{
+    position: absolute;
+    display: flex;
+    width: 35%;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+}
+.cprice div{
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(246, 247, 248, 1);
+    border-radius: 5px;
+}
+.cprice p{
+    width: 20%;
+}
+.ctitle {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    align-items: center;
+}
+.ctitle button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    color: red;
+}
+.ctitle div{
+    display: flex;
+    width: 330px;
+
+}
+.cprice div button{
+    width: 30px;
+    height: 30px;
+    color: rgba(51, 160, 255, 1);
+    border: none;
+    background-color: rgba(246, 247, 248, 1);
+    font-size: 18px;
+    font-weight: 600;
+}
+.prsss{
+    display: flex;
+    width: 80%;
+    gap: 37%;
+}
+.subtotal{
+    /* display: flex;
+    flex-direction: column; */
+    width: 300px;
+    display: grid;
+    gap: 20px;
+    justify-content: start;
+    align-items: start;
+}
+.subtotal p{
+    margin-right: 200px;
+    display: flex;
+    width: 100%;
+    gap: 50%;
+}
+.subtotal div{
+    display: grid;
+    gap: 10px;
+}
+.subtotal button{
+    width: 300px;
+    height: 45px;
+    color: white;
+    background-color: rgba(51, 160, 255, 1);
+    border: none;
+    border-radius: 5px;
+}
+.tot{
+    display: grid;
+    width: 100%;
+}
+.tot h3{
+    display: flex;
+    width: 100%;
+    gap:60%;
+}
+.inp{
+    display: flex;
+    height: 50px;
+}
+.inp input{
+    width: 300px;
+    padding-left: 10px;
+    border: 2px solid rgba(241, 243, 244, 1);
+}
+.inp button{
+    width: 100px;
+    height: 50px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(51, 160, 255, 1);
+}

@@ -1,0 +1,57 @@
+.contcontainer{
+    width: 100%;
+    display: grid;
+}
+.cont{
+    display: flex;
+    width: 80%;
+    height: 850px;
+    padding-top:40px;
+    justify-content: center;
+    align-items: center;
+}
+.boxx{
+    border-radius: 10px;
+    width: 53%;
+    height: 650px;
+    background-image: url(Union.png);
+}
+.boxx{
+    color: white;
+    padding: 100px 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.boxx *{
+    width: 100%;
+    
+}
+.boxx h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+.inputss{
+    width: 42%;
+    display: grid;
+    gap: 50px;
+}
+.src{
+    border: 2px solid rgba(188, 221, 254, 1);
+    border-radius: 5px;
+}
+.src input{
+    width: 300px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.src button{
+    width: 80px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(64, 191, 255, 1);
+    color: white;
+}

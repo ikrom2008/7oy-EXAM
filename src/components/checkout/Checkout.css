@@ -1,0 +1,101 @@
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0006;
+    z-index: 9999999999999999999;
+}
+.check__wrapper{
+    position: fixed;
+    top: 7%;
+    left: 15%;
+    width: 70%;
+    padding-top: 50px;
+    height: 650px;
+    background: white;
+    transform: translate((-50%,-50%));
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    h2{
+        color: rgba(64, 191, 255, 1);
+    }
+    button{
+        margin-top: -50px;
+    }
+    input{
+        padding-left: 10px;
+        border: none;
+        background: rgb(247, 245, 245);
+        border-radius: 5px;
+    }
+}
+.rembt{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    
+}
+.rembt button{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    font-size: 100%;
+    color: rgba(64, 191, 255, 1);
+    background-color: white;
+    border: none;
+}
+.checkfl{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: start;
+}
+.selm{
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 100%;
+    }
+}
+.sele{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 20px;
+    input{
+        width: 100%;
+        height: 40px;
+    }
+}
+.selm div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: max-content;
+    gap: 20px;
+    input{
+        width: 100%;
+        height: 40px;
+    }
+    h4{
+        width: 100%;
+        color: rgba(64, 191, 255, 1);
+    }
+}
+.sumbt{
+    width: 250px;
+    font-size: 100%;
+    font-weight: 600;
+    height: 45px;
+    border: none;
+    color: white;
+    background: rgba(51, 160, 255, 1);
+    border-radius: 5px;
+}

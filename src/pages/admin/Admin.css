@@ -1,0 +1,30 @@
+.admin{
+    width: 80%;
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    gap: 20px;
+    padding-bottom: 260px;
+}
+.admin h2{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+}
+.admin p{
+    width: 100%;
+}
+.admin button{
+    width: 220px;
+    height: 45px;
+    border: none;
+    color: white;
+    background-color: rgba(51, 160, 255, 1);
+    border-radius: 5px ;
+    font-size: 18px;
+    font-weight: 600;
+}
+.admin div{
+    width: 100%;
+}
