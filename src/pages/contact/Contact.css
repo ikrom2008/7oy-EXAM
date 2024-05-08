@@ -14,7 +14,7 @@
     border-radius: 10px;
     width: 53%;
     height: 650px;
-    background-image: url(Union.png);
+    background-image: url(../../../public/Union.png);
 }
 .boxx{
     color: white;

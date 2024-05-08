@@ -54,7 +54,7 @@ function Footer() {
             </div>
             <div className='cash'>
                 <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
-                <img src="Brands.png" alt="" />
+                <img src="../../../public/Brands.png" alt="" />
             </div>
         </div>
       </footer>
