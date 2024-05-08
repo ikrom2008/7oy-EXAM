@@ -99,24 +99,24 @@ function Main({product}) {
                 <button>SHOP NOW</button>
                 </div>
             </div>
-            <img src="../../../public/shoes-shoe-png-transparent-shoe-images-pluspng-17 1.png" alt="" />
+            <img src="shoes-shoe-png-transparent-shoe-images-pluspng-17 1.png" alt="" />
             </div>
         </section><br /><br /><br />
         <section className='shipping'>
             <div className='pr_1'>
-                <img src="../../../public/shipping.png" alt="" />
+                <img src="shipping.png" alt="" />
                 <br />
                 <h3>FREE SHIPPING</h3>
                 <p>Lorem Ipsum is simply <br /> dummy text of the <br /> printing and typesetting <br /> industry.</p>
             </div>
             <div className='pr_1 heyy1'>
-                <img src="../../../public/refund.png" alt="" />
+                <img src="refund.png" alt="" />
                 <br />
                 <h3>100% REFUND</h3>
                 <p>Lorem Ipsum is simply <br /> dummy text of the <br /> printing and typesetting <br /> industry.</p>
             </div>
             <div className='pr_1 heyy2'>
-                <img src="../../../public/support.png" alt="" />
+                <img src="support.png" alt="" />
                 <br />
                 <h3>SUPPORT 24/7</h3>
                 <p>Lorem Ipsum is simply <br /> dummy text of the <br /> printing and typesetting <br /> industry.</p>
@@ -126,7 +126,7 @@ function Main({product}) {
             <h2>LATEST NEWS</h2>
             <div className='news'>
                 <div className='infos'>
-                <img src="../../../public/Nike_logo_emblem_logotype 1.png" alt="" />
+                <img src="Nike_logo_emblem_logotype 1.png" alt="" />
                 <div>
                     <h5>01 Jan, 2015</h5>
                     <h4>Fashion Industry</h4>
@@ -134,7 +134,7 @@ function Main({product}) {
                 </div>
             </div>
             <div className='infos none1'>
-                <img src="../../../public/figma-1-logo 1.png" alt="" />
+                <img src="figma-1-logo 1.png" alt="" />
                 <div>
                     <h5>01 Jan, 2015</h5>
                     <h4>Fashion Industry</h4>
@@ -142,7 +142,7 @@ function Main({product}) {
                 </div>
             </div>
             <div className='infos none2'>
-                <img src="../../../public/kronos-logo-1-1 1.png" alt="" />
+                <img src="kronos-logo-1-1 1.png" alt="" />
                 <div>
                     <h5>01 Jan, 2015</h5>
                     <h4>Fashion Industry</h4>
@@ -155,7 +155,7 @@ function Main({product}) {
             <h2>FEATURED PRODUCTS</h2>
             <div className='nikeflex'>
                 <div className='nike'>
-                    <img src="../../../public/Rectangle 1 copy 25.png" alt="" />
+                    <img src="Rectangle 1 copy 25.png" alt="" />
                     <div className='rat'>
                         <h4>Blue Swade Nike <br /> Sneakers</h4>
                         <Rating style={{width: '100%'}} name="half-rating" defaultValue={4} precision={0.5} />
@@ -165,7 +165,7 @@ function Main({product}) {
                     </div>
                 </div>
                 <div className='nike none1'>
-                    <img src="../../../public/Rectangle 1 copy 25.png" alt="" />
+                    <img src="Rectangle 1 copy 25.png" alt="" />
                     <div className='rat'>
                         <h4>Blue Swade Nike <br /> Sneakers</h4>
                         <Rating style={{width: '100%'}} name="half-rating" defaultValue={4} precision={0.5} />
@@ -175,7 +175,7 @@ function Main({product}) {
                     </div>
                 </div>
                 <div className='nike none2'>
-                    <img src="../../../public/Rectangle 1 copy 25.png" alt="" />
+                    <img src="Rectangle 1 copy 25.png" alt="" />
                     <div className='rat'>
                         <h4>Blue Swade Nike <br /> Sneakers</h4>
                         <Rating style={{width: '100%'}} name="half-rating" defaultValue={4} precision={0.5} />

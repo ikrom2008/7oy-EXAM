@@ -8,7 +8,7 @@ function Footer() {
             <div className='stac_1'>
                 <div className='text'>
                     <ul>
-                        <li style={{width: '40%'}}><img src="../../../public/Icon.svg" alt="" /> E-Comm</li>
+                        <li style={{width: '40%'}}><img src="Icon.svg" alt="" /> E-Comm</li>
                         <li>Lorem Ipsum is simply dummy text of the <br />printing and typesetting industry. Lorem <br /> Ipsum has been the industrys standard <br />dummy text ever.Since the 1500s, when <br /> an unknown printer.</li>
                     </ul>
                 </div>
@@ -54,7 +54,7 @@ function Footer() {
             </div>
             <div className='cash'>
                 <p>© 2018 Ecommerce theme by www.bisenbaev.com</p>
-                <img src="../../../public/Brands.png" alt="" />
+                <img src="Brands.png" alt="" />
             </div>
         </div>
       </footer>

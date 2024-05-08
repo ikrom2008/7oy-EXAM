@@ -39,7 +39,7 @@ function Header() {
             </nav><br />
             <div className="pages">
                 <div className="logo" onClick={() => navigate('/')}>
-                    <img src="../../../public/Icon.svg" alt="" />
+                    <img src="Icon.svg" alt="" />
                     <h3>E-Comm</h3>
                 </div>
                 <ul className="page">
