@@ -27,3 +27,8 @@
     height: 30px;
     border-radius: 5px;
 }
+@media screen and (max-width: 420px) {
+    .login div{
+        width: 100%;
+    }
+ }

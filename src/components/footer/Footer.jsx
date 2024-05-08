@@ -1,10 +1,6 @@
 import { FaFacebookF, FaTwitter } from 'react-icons/fa'
 import './Footer.css'
-import { useEffect } from 'react'
 function Footer() {
-    useEffect(() => {
-        window.scrollTo(0,0)
-      },[])
   return (
     <div>
       <footer className='footer'>

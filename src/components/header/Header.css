@@ -85,13 +85,28 @@
     font-size: 17px;
 }
 @media screen and (max-width: 1020px) {
-   .page{
+    .header{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+    }
+   .pages{
     display: none;
-   }
-   .header{
-    width: 90%;
    }
    .els img{
     display: none;
    }
-  }
+}
+@media screen and (max-width: 1170px) {
+   .none1{
+    display: none;
+   }
+
+}
+@media screen and (max-width: 850px) {
+   .select{
+    display: none;
+   }
+}

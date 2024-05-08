@@ -1,6 +1,10 @@
 import { TextField } from '@mui/material'
 import'./Contact.css'
+import { useEffect } from 'react'
 function Contact() {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   return (
     <div className='contcontainer'>
         <div className='cont'>

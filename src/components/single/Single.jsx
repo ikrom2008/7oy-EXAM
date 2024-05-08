@@ -113,7 +113,7 @@ function Single({product}) {
             <h5>{price} <span>{oldprice}</span></h5>
         </div>
         </div>
-      </div>
+      </div><br /><br />
 
       <br /><br />
       <div className='infopr'>

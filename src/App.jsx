@@ -11,25 +11,35 @@ import Card from './pages/card/Card'
 import Wishlist from './pages/wishlist/Wishlist'
 import Login from './pages/login/Login'
 import Admin from './pages/admin/Admin'
+import Loading from './components/loading/Loading'
 
 let url = 'https://6634b1db9bb0df2359a26989.mockapi.io/api/users'
 function App() {
   const [product,setProduct] = useState([])
-
+  const [loading,setLoading] = useState(false)
   const fetchdata = async () => {
+    setLoading(true)
     try {
      const resp = await fetch(url)
      const data = await resp.json()
+     
      setProduct(data)
+     setLoading(false)
     } catch (error) {
      console.log(error);
+     setLoading(false)
     }
    }
    useEffect(()=>{
        fetchdata()
    },[])
 
-  return (
+   if(loading){
+    return(
+      <Loading />
+    )
+   }else{
+    return (
     <>
     <div className='container'>
       <Header />
@@ -51,6 +61,8 @@ function App() {
       <Footer />
     </>
   )
+   }
+  
 }
 
 export default App

@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom'
 function Main({product}) {
     let wish = useSelector(state => state.wishlist.value)
     let carts = useSelector(state => state.cart.value)
-    const [products, setProducts] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
+    const [slice, setSlice] = useState(false);
     const dispatch = useDispatch()
     
         let prs = product?.map((item) => (
@@ -54,6 +54,16 @@ function Main({product}) {
                     </li>
                     ));
                   };
+                  let  prslice
+                  let shh
+                  if(slice){
+                    prslice = prs.slice(0,12)
+                    shh = 'HIDE'
+                  }else{
+                    prslice = prs.slice(0,8)
+                    shh = 'LOAD MORE'
+                  }
+                 
   return (
     <div>
       <main className='main'>
@@ -75,10 +85,10 @@ function Main({product}) {
         {searchTerm ? (
           handleSearch()
         ) : (
-          prs
+          prslice
         )}
         </ul>
-        <p style={{textDecoration: 'underline' , color: 'rgba(51, 160, 255, 1)'}}>LOAD MORE</p>
+        <button style={{textDecoration: 'underline' , color: 'rgba(51, 160, 255, 1)', border:'none' , background: 'white', zIndex: '999999999', fontSize: '20px'}} onClick={() => setSlice(!slice)}>{shh}</button>
         </section><br /><br /><br />
         <section className='newbrand'>
             <div className='els'>
@@ -99,13 +109,13 @@ function Main({product}) {
                 <h3>FREE SHIPPING</h3>
                 <p>Lorem Ipsum is simply <br /> dummy text of the <br /> printing and typesetting <br /> industry.</p>
             </div>
-            <div className='pr_1'>
+            <div className='pr_1 heyy1'>
                 <img src="refund.png" alt="" />
                 <br />
                 <h3>100% REFUND</h3>
                 <p>Lorem Ipsum is simply <br /> dummy text of the <br /> printing and typesetting <br /> industry.</p>
             </div>
-            <div className='pr_1'>
+            <div className='pr_1 heyy2'>
                 <img src="support.png" alt="" />
                 <br />
                 <h3>SUPPORT 24/7</h3>
@@ -123,7 +133,7 @@ function Main({product}) {
                     <p>Lorem Ipsum is simply <br /> dummy text of the <br />printing and typesetting <br /> industry.</p>
                 </div>
             </div>
-            <div className='infos'>
+            <div className='infos none1'>
                 <img src="figma-1-logo 1.png" alt="" />
                 <div>
                     <h5>01 Jan, 2015</h5>
@@ -131,7 +141,7 @@ function Main({product}) {
                     <p>Lorem Ipsum is simply <br /> dummy text of the <br />printing and typesetting <br /> industry.</p>
                 </div>
             </div>
-            <div className='infos'>
+            <div className='infos none2'>
                 <img src="kronos-logo-1-1 1.png" alt="" />
                 <div>
                     <h5>01 Jan, 2015</h5>
@@ -154,7 +164,7 @@ function Main({product}) {
                         </div>
                     </div>
                 </div>
-                <div className='nike'>
+                <div className='nike none1'>
                     <img src="Rectangle 1 copy 25.png" alt="" />
                     <div className='rat'>
                         <h4>Blue Swade Nike <br /> Sneakers</h4>
@@ -164,7 +174,7 @@ function Main({product}) {
                         </div>
                     </div>
                 </div>
-                <div className='nike'>
+                <div className='nike none2'>
                     <img src="Rectangle 1 copy 25.png" alt="" />
                     <div className='rat'>
                         <h4>Blue Swade Nike <br /> Sneakers</h4>

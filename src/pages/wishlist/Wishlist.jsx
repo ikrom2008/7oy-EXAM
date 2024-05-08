@@ -6,10 +6,14 @@ import { addToCart } from "../../components/context/cartSlice"
 import { IoCartOutline, IoCartSharp, IoHeart, IoHeartOutline } from "react-icons/io5"
 import Empty from "../../components/empty/Empty"
 import './Wishlist.css'
+import { useEffect } from "react"
 function Wishlist() {
     let wishes = useSelector(state => state.wishlist.value)
     let carts = useSelector(state => state.cart.value)
     let dispatch = useDispatch()
+    useEffect(() => {
+      window.scrollTo(0,0)
+    },[])
     let prs = wishes?.map((item) => (
         <li key={item.id} className='list'>
             <img src={item.img} alt="" />

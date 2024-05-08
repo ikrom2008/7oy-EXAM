@@ -48,7 +48,7 @@ useEffect(() => {
     return (
       <div className='card'>
         {
-          check && <Checkout setCheck={setCheck} />
+          check && <Checkout setCheck={setCheck} cards={cards} />
         }
         <div className='navigs'>
         <p>Home / Hot Deal / <span>Nike Airmax 270 React</span></p>

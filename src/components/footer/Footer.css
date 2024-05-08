@@ -48,3 +48,16 @@
 .cash p{
     opacity: 0.3;
 }
+@media screen and (max-width: 480px) {
+    .cash img{
+        display: none;
+    }
+ }
+ @media screen and (max-width: 440px) {
+    .footer{
+        padding-top: 0;
+    }
+    .cash{
+        display: none;
+    }
+ }

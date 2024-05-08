@@ -1,7 +1,11 @@
 import { useNavigate } from 'react-router-dom'
 import './Admin.css'
+import { useEffect } from 'react'
 function Admin() {
     let navigate = useNavigate()
+    useEffect(() => {
+      window.scrollTo(0,0)
+    },[])
   return (
     <div className='admin'><br /><br /><br /><br /><br />
       <h2>

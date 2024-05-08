@@ -250,12 +250,13 @@
     gap: 15px;
 }
 .inps{
+    width: 50%;
     display: flex;
     border: 2px solid rgba(188, 221, 254, 1);
     border-radius: 5px;
 }
 .inps input{
-    width: 450px;
+    width: 80%;
     border: none;
     padding-left: 10px;
     height: 50px;
@@ -263,7 +264,7 @@
     font-size: 16px;
 }
 .inps button{
-    width: 100px;
+    width: 20%;
     height: 50px;
     border: none;
     color: white;
@@ -272,3 +273,25 @@
     font-size: 18px;
     font-weight: 600;
 }
+@media screen and (max-width: 1170px) {
+    .none1{
+     display: none;
+    }
+ }
+ @media screen and (max-width: 775px) {
+    .none2{
+     display: none;
+    }
+ } 
+ @media screen and (max-width: 450px) {
+    .newpages{
+        display: none;
+    }
+ }
+ .loading{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
