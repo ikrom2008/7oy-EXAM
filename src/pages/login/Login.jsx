@@ -14,8 +14,8 @@ function Login() {
   return (
     <div className="login">
       <div className='log'>
-      <TextField id="outlined-basic" value={name} onChange={(e) => setName(e.target.value)}  label="Username" variant="outlined" fullWidth />
-      <TextField  id="outlined-basic" value={password} onChange={(e) => setPassword(e.target.value)} label="Password" variant="outlined" fullWidth />
+      <TextField type='name' id="outlined-basic" value={name} onChange={(e) => setName(e.target.value)}  label="Username" variant="outlined" fullWidth />
+      <TextField type='password' id="outlined-basic" value={password} onChange={(e) => setPassword(e.target.value)} label="Password" variant="outlined" fullWidth />
       <select name="" id="" value={user} onChange={(e) => setUser(e.target.value)}>
         <option value="">Role</option>
         <option value="user">User</option>
