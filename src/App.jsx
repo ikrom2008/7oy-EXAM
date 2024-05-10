@@ -12,7 +12,6 @@ import Wishlist from './pages/wishlist/Wishlist'
 import Login from './pages/login/Login'
 import Admin from './pages/admin/Admin'
 import Loading from './components/loading/Loading'
-import Error from './components/error/Error'
 
 let url = 'https://6634b1db9bb0df2359a26989.mockapi.io/api/users'
 function App() {
@@ -57,7 +56,6 @@ function App() {
           <Route path='/wishlist' element={<Wishlist />} />
           <Route path='/login' element={<Login />} />
           <Route path='/admin' element={<Admin />} />
-          <Route path='*' element={<Error />} />
         </Routes>
     </div>
       <Footer />
