@@ -21,8 +21,6 @@ function Checkout({ setCheck , cards }) {
     navigate('/')
     alert('Bizning saytdan foydalanish uchun yashash joyingizni korsating')
   }
-  console.log(iplocation);
-  // const {title} = cards
   const totalPrice = cards?.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const itemtitle = cards?.reduce((acc, item) => acc + item.title + ` , %0A `,'');
   const [fname, setFname] = useState("");
