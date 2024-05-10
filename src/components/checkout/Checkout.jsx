@@ -1,18 +1,35 @@
 import { useEffect, useState } from "react";
 import "./Checkout.css";
 import { PatternFormat } from "react-number-format";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 function Checkout({ setCheck , cards }) {
+  const [iplocation, setIplocation] = useState('');
+  let navigate = useNavigate()
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(success, error);
+  } else {
+    console.log("Geolocation not supported");
+  }
+  function success(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+    console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+    setIplocation(`Latitude: ${latitude}, Longitude: ${longitude}`)
+  }
+  function error() {
+    console.log("Unable to retrieve your location");
+    navigate('/')
+    alert('Bizning saytdan foydalanish uchun yashash joyingizni korsating')
+  }
+  console.log(iplocation);
   // const {title} = cards
-  console.log(cards);
   const totalPrice = cards?.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const itemtitle = cards?.reduce((acc, item) => acc + item.title + ` , %0A `,'');
-  console.log(itemtitle);
   const [fname, setFname] = useState("");
-  const [email, setEmail] = useState();
-  const [lname, setLname] = useState();
-  const [address, setAddress] = useState();
-  const [number, setNumber] = useState();
+  const [email, setEmail] = useState('');
+  const [lname, setLname] = useState('');
+  const [address, setAddress] = useState('');
+  const [number, setNumber] = useState(9);
   let day = new Date().getDate().toString()
   let hour = new Date().getHours().toString()
   let minut = new Date().getMinutes().toString()
@@ -21,11 +38,6 @@ function Checkout({ setCheck , cards }) {
   let chatid = "-4276829127";
   //updates: https://api.telegram.org/bot7184939016:AAFQh1Y9yxheg1s4zCDJLoDKpoDeRbJzdiU/getUpdates
   // https://api.telegram.org/bot[your_token]/sendMessage?chat_id=[your chat_id]
-  // cards.map((item) => (
-  //   <li key={item.id}>
-  //     <p></p>
-  //   </li>
-  // ))
   const handleOrder = () => {
     let text = "";
     text += `Familiyasi: ${fname} %0A`;
@@ -38,13 +50,16 @@ function Checkout({ setCheck , cards }) {
     text += `Narxi: %0A`;
     text += `${totalPrice} %0A %0A`;
     text += `Buyurtma bergan vaqti: %0A`;
-    text += `${day} : ${hour} : ${minut} : ${secund}`;
+    text += `${day} : ${hour} : ${minut} : ${secund} %0A`;
+    text += `Ip location %0A`;
+    text += `${iplocation}`;
     let url = `https://api.telegram.org/bot${bottoken}/sendMessage?chat_id=${chatid}&text=${text}`;
     let api = new XMLHttpRequest();
     api.open("GET", url, true);
     api.send();
     alert('Buturtma qabul qilindi, Tez orada aloqaga chiqamiz!')
     localStorage.removeItem('cart')
+    navigate('/')
   };
   useEffect(() => {
     window.scrollTo(0,0)
@@ -82,7 +97,7 @@ function Checkout({ setCheck , cards }) {
                 value={fname}
                 onChange={(e) => setFname(e.target.value)}
                 required
-                type="text"
+                type="name"
                 name=""
                 id=""
                 placeholder="First Name"
@@ -91,7 +106,7 @@ function Checkout({ setCheck , cards }) {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                type="text"
+                type="gmail"
                 name=""
                 id=""
                 placeholder="Email Address"
